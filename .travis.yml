@@ -21,4 +21,4 @@ script:
   - npm run unit && npm run integration
 
 after_success:
-  - if [[ "$UPLOAD_BUILD" == "true" ]]; then npm run upload; fi
+  - if [[ "$UPLOAD_BUILD" == "true" ]]; echo "DID IT"; fi
